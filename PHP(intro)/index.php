@@ -21,15 +21,17 @@
         // Step 2
 
         for($i = 1; $i <= 10; $i++) {
-            if ($i == 3) continue;
-            echo "<p>Le nombre vaut $i</p>";
+            if ($i != 3) {
+                echo "<p>Le nombre vaut $i</p>";
+            }
         }
 
         // Step 3
 
         for($i = 1; $i <= 10; $i++) {
-            if ($i >= 4 && $i <= 7) continue;
-            echo "<p>Le nombre vaut $i</p>";
+            if ($i < 4 || $i > 7) {
+                echo "<p>Le nombre vaut $i</p>";
+            }
         }
 
         // Step 4
