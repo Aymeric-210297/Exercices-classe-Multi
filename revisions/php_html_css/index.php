@@ -1,6 +1,7 @@
 <?php
 
-function algorithmeEuclide2($nbr1, $nbr2) {
+function algorithmeEuclide2($nbr1, $nbr2)
+{
     $reste = $nbr2;
     while ($reste != 0) {
         $reste = $nbr1 % $nbr2;
@@ -10,9 +11,10 @@ function algorithmeEuclide2($nbr1, $nbr2) {
     return $nbr1;
 }
 
-function fonctionSpeciale($nombreDepart, $nombreElementsSouhaite) {
+function fonctionSpeciale($nombreDepart, $nombreElementsSouhaite)
+{
     $suite = "" . $nombreDepart . " ";
-    for ($i = 0; $i < $nombreElementsSouhaite; $i++) { 
+    for ($i = 0; $i < $nombreElementsSouhaite; $i++) {
         if (($nombreDepart < 5) && ((int) $nombreDepart % 3 != 0)) {
             $nombreDepart = $nombreDepart * 5;
         } else {
@@ -34,6 +36,7 @@ $tableau = [1, 8, 10, 12, 48, 78, 113, 114];
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -41,6 +44,7 @@ $tableau = [1, 8, 10, 12, 48, 78, 113, 114];
     <link rel="stylesheet" href="styles/index.css">
     <title>Accueil</title>
 </head>
+
 <body>
     <?php include('includes/navbar.php') ?>
     <main>
@@ -55,9 +59,9 @@ $tableau = [1, 8, 10, 12, 48, 78, 113, 114];
             <h2>Montrer moi comment afficher proprement du code</h2>
             <p>Dans la variable $tableau (<?= implode(", ", $tableau) ?>), voici les nombres pairs</p>
             <ul>
-                <?php for ($i = 0; $i < sizeof($tableau); $i++): ?>
+                <?php for ($i = 0; $i < sizeof($tableau); $i++) : ?>
                     <?php $valeur = $tableau[$i] ?>
-                    <?php if ($valeur % 2 == 0): ?>
+                    <?php if ($valeur % 2 == 0) : ?>
                         <li><?= $valeur ?></li>
                     <?php endif ?>
                 <?php endfor ?>
@@ -65,11 +69,12 @@ $tableau = [1, 8, 10, 12, 48, 78, 113, 114];
             <p>Dans la variable $phrase "<?= $phrase ?>". La dernière lettre de chaque mot est</p>
             <ul>
                 <?php $phrase_explode = explode(" ", $phrase) ?>
-                <?php for ($i = 0; $i < sizeof($phrase_explode); $i++): ?>
+                <?php for ($i = 0; $i < sizeof($phrase_explode); $i++) : ?>
                     <li><?= $phrase_explode[$i][-1] ?></li>
                 <?php endfor ?>
             </ul>
         </div>
     </main>
 </body>
+
 </html>
