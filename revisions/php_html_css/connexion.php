@@ -7,6 +7,29 @@
     <title>Formulaire de connexion</title>
 </head>
 <body>
-    
+    <main>
+        <form action="">
+            <fieldset>
+                <legend>Formulaire de connexion</legend>
+                <div>
+                    <label for="nom">Nom</label>
+                    <input type="text" name="nom" id="nom">
+                </div>
+                <div>
+                    <label for="prenom">Prénom</label>
+                    <input type="text" name="prenom" id="prenom">
+                </div>
+                <div>
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email">
+                </div>
+                <div>
+                    <label for="motdepasse">Mot de passe</label>
+                    <input type="password" name="motdepasse" id="motdepasse">
+                </div>
+            </fieldset>
+            <button type="submit">Soumettre</button>
+        </form>
+    </main>
 </body>
 </html>
