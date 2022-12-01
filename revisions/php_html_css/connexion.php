@@ -30,7 +30,7 @@
                     <label for="motdepasse">Mot de passe</label>
                     <input type="password" name="motdepasse" id="motdepasse">
                 </div>
-                <div>
+                <div class="form-robot">
                     <label for="robot">Je ne suis pas un robot</label>
                     <input type="checkbox" name="robot" id="robot">
                 </div>
