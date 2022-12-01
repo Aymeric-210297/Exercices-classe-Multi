@@ -16,23 +16,23 @@
                 <legend>Formulaire de connexion</legend>
                 <div>
                     <label for="nom">Nom</label>
-                    <input type="text" name="nom" id="nom">
+                    <input type="text" name="nom" id="nom" required>
                 </div>
                 <div>
                     <label for="prenom">Prénom</label>
-                    <input type="text" name="prenom" id="prenom">
+                    <input type="text" name="prenom" id="prenom" required>
                 </div>
                 <div>
                     <label for="email">Email</label>
-                    <input type="email" name="email" id="email">
+                    <input type="email" name="email" id="email" required>
                 </div>
                 <div>
                     <label for="motdepasse">Mot de passe</label>
-                    <input type="password" name="motdepasse" id="motdepasse">
+                    <input type="password" name="motdepasse" id="motdepasse" required>
                 </div>
                 <div class="form-robot">
                     <label for="robot">Je ne suis pas un robot</label>
-                    <input type="checkbox" name="robot" id="robot">
+                    <input type="checkbox" name="robot" id="robot" required>
                 </div>
                 <button type="submit">Connexion</button>
             </fieldset>
