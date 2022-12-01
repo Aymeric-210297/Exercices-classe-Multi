@@ -7,6 +7,7 @@
     <title>Accueil</title>
 </head>
 <body>
+    <?php include('includes/navbar.php') ?>
     <main>
         <div>
             <h2>Je veux des belles fonctions php (séparer analyse et affichage dans votre fichier)</h2>
