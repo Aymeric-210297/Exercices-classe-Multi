@@ -30,8 +30,8 @@
                     <label for="motdepasse">Mot de passe</label>
                     <input type="password" name="motdepasse" id="motdepasse">
                 </div>
+                <button type="submit">Soumettre</button>
             </fieldset>
-            <button type="submit">Soumettre</button>
         </form>
     </main>
 </body>

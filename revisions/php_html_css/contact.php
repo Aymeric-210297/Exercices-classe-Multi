@@ -34,8 +34,8 @@
                     <label for="message">Votre message</label>
                     <textarea name="message" id="message" cols="30" rows="10"></textarea>
                 </div>
+                <button type="submit">Soumettre</button>
             </fieldset>
-            <button type="submit">Soumettre</button>
         </form>
     </main>
 </body>
