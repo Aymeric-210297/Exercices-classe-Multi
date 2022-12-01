@@ -1,3 +1,34 @@
+<?php
+
+function algorithmeEuclide2($nbr1, $nbr2) {
+    $reste = $nbr2;
+    while ($reste != 0) {
+        $reste = $nbr1 % $nbr2;
+        $nbr1 = $nbr2;
+        $nbr2 = $reste;
+    }
+    return $nbr1;
+}
+
+function special($nombreDepart, $nombreElementsSouhaite) {
+    $suite = "" . $nombreDepart . " ";
+    for ($i = 0; $i < $nombreElementsSouhaite; $i++) { 
+        if (($nombreDepart < 5) && ($nombreDepart % 3 != 0)) {
+            $nombreDepart = $nombreDepart * 5;
+        } else {
+            if (($nombreDepart > 5) && ($nombreDepart < 10)) {
+                $nombreDepart = $nombreDepart / 6;
+            } else {
+                $nombreDepart = $nombreDepart * $nombreDepart;
+            }
+        }
+        $suite = $suite . $nombreDepart . " ";
+    }
+    return $suite;
+}
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -13,9 +44,9 @@
         <h1>Animalerie Tom&Co</h1>
         <div>
             <h2>Je veux des belles fonctions php (séparer analyse et affichage dans votre fichier)</h2>
-            <p>Voici une suite bien spéciale : TODO!</p>
+            <p>Voici une suite bien spéciale : <?= special(5, 10) ?></p>
             <br />
-            <p>Le PGCD entre 21 et 15 vaut TODO!</p>
+            <p>Le PGCD entre 21 et 15 vaut <?= algorithmeEuclide2(21, 15) ?></p>
         </div>
         <div>
             <h2>Montrer moi comment afficher proprement du code</h2>
