@@ -10,6 +10,7 @@
 <body>
     <?php include('includes/navbar.php') ?>
     <main>
+        <h1>Animalerie Tom&Co</h1>
         <form action="">
             <fieldset>
                 <legend>Formulaire de contact</legend>

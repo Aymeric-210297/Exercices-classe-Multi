@@ -10,6 +10,7 @@
 <body>
     <?php include('includes/navbar.php') ?>
     <main>
+        <h1>Animalerie Tom&Co</h1>
         <div>
             <h2>Je veux des belles fonctions php (séparer analyse et affichage dans votre fichier)</h2>
             <p>Voici une suite bien spéciale : TODO!</p>

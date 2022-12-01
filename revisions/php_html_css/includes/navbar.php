@@ -6,5 +6,4 @@
             <li><a href="contact.php">Contact</a></li>
         </ul>
     </nav>
-    <h1>Animalerie Tom&Co</h1>
 </header>

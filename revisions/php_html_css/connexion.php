@@ -10,6 +10,7 @@
 <body>
     <?php include('includes/navbar.php') ?>
     <main>
+        <h1>Connexion plateforme</h1>
         <form action="">
             <fieldset>
                 <legend>Formulaire de connexion</legend>
