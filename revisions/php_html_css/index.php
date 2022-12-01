@@ -62,7 +62,7 @@ $tableau = [1, 8, 10, 12, 48, 78, 113, 114];
                     <?php endif ?>
                 <?php endfor ?>
             </ul>
-            <p>Dans la variable $phrase "<?= $phrase ?>"". La dernière lettre de chaque mot est</p>
+            <p>Dans la variable $phrase "<?= $phrase ?>". La dernière lettre de chaque mot est</p>
             <ul>
                 <?php $phrase_explode = explode(" ", $phrase) ?>
                 <?php for ($i = 0; $i < sizeof($phrase_explode); $i++): ?>
