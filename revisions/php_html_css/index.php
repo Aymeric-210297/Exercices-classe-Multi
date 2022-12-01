@@ -27,6 +27,9 @@ function special($nombreDepart, $nombreElementsSouhaite) {
     return $suite;
 }
 
+$phrase = "Bonjour a tous pour ces révisions";
+$tableau = [1, 8, 10, 12, 48, 78, 113, 114];
+
 ?>
 
 <!DOCTYPE html>
@@ -50,15 +53,21 @@ function special($nombreDepart, $nombreElementsSouhaite) {
         </div>
         <div>
             <h2>Montrer moi comment afficher proprement du code</h2>
-            <p>Dans la variable $tableau, voici les nombres pairs</p>
+            <p>Dans la variable $tableau (<?= implode(", ", $tableau) ?>), voici les nombres pairs</p>
             <ul>
-                <li>8</li>
-                <li>10</li>
-                <li>48</li>
+                <?php for ($i = 0; $i < sizeof($tableau); $i++): ?>
+                    <?php $valeur = $tableau[$i] ?>
+                    <?php if ($valeur % 2 == 0): ?>
+                        <li><?= $valeur ?></li>
+                    <?php endif ?>
+                <?php endfor ?>
             </ul>
-            <p>Dans la variable $phrase "Bonjour a tous pour ces révisions". La dernière lettre de chaque mot est</p>
+            <p>Dans la variable $phrase "<?= $phrase ?>"". La dernière lettre de chaque mot est</p>
             <ul>
-                <li>TODO!</li>
+                <?php $phrase_explode = explode(" ", $phrase) ?>
+                <?php for ($i = 0; $i < sizeof($phrase_explode); $i++): ?>
+                    <li><?= $phrase_explode[$i][-1] ?></li>
+                <?php endfor ?>
             </ul>
         </div>
     </main>
