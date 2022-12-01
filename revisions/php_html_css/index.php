@@ -10,14 +10,14 @@ function algorithmeEuclide2($nbr1, $nbr2) {
     return $nbr1;
 }
 
-function special($nombreDepart, $nombreElementsSouhaite) {
+function fonctionSpeciale($nombreDepart, $nombreElementsSouhaite) {
     $suite = "" . $nombreDepart . " ";
     for ($i = 0; $i < $nombreElementsSouhaite; $i++) { 
-        if (($nombreDepart < 5) && ($nombreDepart % 3 != 0)) {
+        if (($nombreDepart < 5) && ((int) $nombreDepart % 3 != 0)) {
             $nombreDepart = $nombreDepart * 5;
         } else {
             if (($nombreDepart > 5) && ($nombreDepart < 10)) {
-                $nombreDepart = $nombreDepart / 6;
+                $nombreDepart = (int) $nombreDepart / 6;
             } else {
                 $nombreDepart = $nombreDepart * $nombreDepart;
             }
@@ -47,7 +47,7 @@ $tableau = [1, 8, 10, 12, 48, 78, 113, 114];
         <h1>Animalerie Tom&Co</h1>
         <div>
             <h2>Je veux des belles fonctions php (séparer analyse et affichage dans votre fichier)</h2>
-            <p>Voici une suite bien spéciale : <?= special(5, 10) ?></p>
+            <p>Voici une suite bien spéciale : <?= fonctionSpeciale(5, 10) ?></p>
             <br />
             <p>Le PGCD entre 21 et 15 vaut <?= algorithmeEuclide2(21, 15) ?></p>
         </div>
