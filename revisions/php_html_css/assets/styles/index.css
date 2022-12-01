@@ -1,0 +1,108 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: antiquewhite;
+}
+
+nav {
+    padding: 1.7em;
+    background-color: burlywood;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+}
+
+nav a {
+    padding: .7em;
+    cursor: pointer;
+    font-size: 1.2em;
+    text-decoration: none;
+    color: brown;
+}
+
+nav a:hover {
+    background-color: antiquewhite;
+    box-shadow: -2px -2px 6px white, 2px 2px 6px black;
+}
+
+h1 {
+    margin-top: .6em;
+    margin-bottom: .6em;
+    font-size: 3em;
+    text-decoration: underline;
+    color: brown;
+}
+
+main {
+    width: 80%;
+    margin: 0 auto;
+}
+
+label {
+    margin-bottom: .3em;
+}
+
+input, textarea {
+    border-radius: 10px;
+    padding: .7em;
+}
+
+input:not(input[name="robot"]), textarea {
+    width: 30%;
+}
+
+form {
+    font-size: 1.5em;
+}
+
+label[for="robot"] {
+    font-size: 1em;
+}
+
+legend {
+    color: brown;
+    padding: .2em;
+    margin-left: .3em;
+    background-color: burlywood;
+    border-radius: 5px 20px 5px 20px;
+}
+
+form div:not(.form-robot) {
+    display: flex;
+    flex-direction: column;
+}
+
+form div {
+    margin: .4em;
+}
+
+button {
+    background-color: greenyellow;
+    border: 2px grey dotted;
+    border-radius: 15px;
+    cursor: pointer;
+    font-size: 1em;
+    margin-left: .3em;
+    margin-bottom: .6em;
+    margin-top: .4em;
+    padding: .2em;
+    box-shadow: 3px 3px 10px 5px black
+}
+
+h2 {
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+main ul {
+    padding-top: 1em;
+    padding-bottom: 1em;
+    margin-left: 3em;
+}
