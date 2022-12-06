@@ -1,0 +1,36 @@
+ul {
+    list-style-type: none;
+}
+
+ul li {
+    margin-bottom: .5em;
+}
+
+main {
+    padding: 2em;
+}
+
+main .titre {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 2.4em;
+    background-color: #324D61;
+}
+
+main .titre h2 {
+    color: white;
+    margin: auto;
+}
+
+main .flex {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+h3 {
+    margin-bottom: .6em;
+    margin-top: .4em;
+}

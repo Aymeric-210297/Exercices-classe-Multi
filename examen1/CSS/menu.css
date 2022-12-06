@@ -1,0 +1,28 @@
+nav {
+    background-color: #0D91F5;
+    height: 4em;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav li {
+    margin-top: 8px;
+    background-color: #899CAB;
+    padding: .8em;
+    border-radius: 50%;
+    border: #324D61 solid 2px;
+    cursor: pointer;
+}
+
+nav li:hover {
+    background-color: #324D61;
+}
+
+nav a {
+    color: whitesmoke;
+    text-decoration: none;
+}

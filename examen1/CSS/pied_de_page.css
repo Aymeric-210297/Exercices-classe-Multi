@@ -1,0 +1,23 @@
+footer {
+    color: whitesmoke;
+    background-color: #0D91F5;
+    display: flex;
+}
+
+footer div {
+    margin-top: .6em;
+    margin-bottom: .6em;
+    background-color: #899CAB;
+    padding: 1.2em;
+    border-radius: 50%;
+    border: #324D61 solid 2px;
+    cursor: pointer;
+}
+
+footer div:hover {
+    background-color: #324D61;
+}
+
+footer div:last-child {
+    margin-left: auto;
+}
