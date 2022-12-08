@@ -1,17 +1,25 @@
 <?php
     $resultat;
     if ($_SERVER['REQUEST_METHOD'] === "POST" && isset($_POST['montant'])) {
-        $resultat = [];
+        $resultat = array();
+        $resultat[500] = 0;
+        $resultat[200] = 0;
+        $resultat[100] = 0;
+        $resultat[50] = 0;
+        $resultat[20] = 0;
+        $resultat[10] = 0;
+        $resultat[5] = 0;
+
         $montant = $_POST['montant'];
 
-        $billets = [500, 200, 100, 50, 20, 10, 5];
+        $billets = array_keys($resultat);
 
-        while ($montant >= 5) {
-            for ($i=0; $i < sizeof($billets) - 1; $i++) {
+        while ($montant >= $billets[sizeof($billets) - 1]) {
+            for ($i=0; $i < sizeof($billets); $i++) {
                 $valeur = $billets[$i];
                 if ($montant >= $valeur) {
                     $montant = $montant - $valeur;
-                    array_push($resultat, $valeur);
+                    $resultat[$valeur] = $resultat[$valeur] + 1;
                     break;
                 }
             }
@@ -20,7 +28,7 @@
 ?>
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -31,13 +39,21 @@
     <form action="./" method="POST">
         <div>
             <label for="montant">Montant en EUR.</label>
-            <input type="number" name="montant" id="montant">
+            <input type="number" name="montant" id="montant" required min="0">
         </div>
         <button type="submit">Envoyer</button>
     </form>
     <?php if (isset($resultat)): ?>
-        <p>Résultat: <?= implode(", ", $resultat) ?></p>
-        <p>Reste: <?= $montant ?></p>
+        <p>Billets:</p>
+        <ul>
+            <?php $billets = array_keys($resultat); ?>
+            <?php for ($i=0; $i < sizeof($billets); $i++): ?>
+                <?php if ($resultat[$billets[$i]] != 0): ?>
+                    <li><?= $billets[$i] ?> : <?= $resultat[$billets[$i]] ?></li>
+                <?php endif ?>
+            <?php endfor ?>
+        </ul>
+        <p>Il vous restera: <?= $montant ?></p>
     <?php endif ?>
 </body>
 </html>
