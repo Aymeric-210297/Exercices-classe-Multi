@@ -1,11 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>PHP(formulaire-1)</title>
 </head>
+
 <body>
     <form action="" method="get">
         <fieldset>
@@ -49,7 +51,7 @@
         </fieldset>
         <fieldset>
             <legend>Périodicité</legend>
-            
+
             <div>
                 <input type="radio" id="hebdomadaire" name="period" value="hebdomadaire" checked>
                 <label for="hebdomadaire">Newsletter hebdomadaire</label>
@@ -67,7 +69,7 @@
             <legend>Version papier - informatique</legend>
             <div>
                 <input type="checkbox" id="papier" name="papier" value="papier" checked>
-                <label for="hebdomadaire">Recevoir la version papier</label>
+                <label for="papier">Recevoir la version papier</label>
             </div>
             <div>
                 <input type="checkbox" id="informatique" name="informatique" value="informatique" checked>
@@ -77,4 +79,5 @@
         <input type="submit" value="Envoyer">
     </form>
 </body>
+
 </html>

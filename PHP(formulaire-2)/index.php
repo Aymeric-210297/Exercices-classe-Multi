@@ -1,16 +1,18 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>form2</title>
+    <title>PHP(formulaire-2)</title>
 </head>
+
 <body>
     <h1>Un super formulaire</h1>
     <form action="" method="">
         <fieldset>
-            <legend>Données personnlles</legend>
+            <legend>Données personnelles</legend>
             <div>
                 <label for="prenom">Votre prénom</label>
                 <input type="text" id="prenom">
@@ -31,7 +33,7 @@
                 <input type="text" id="url">
             </div>
             <div>
-                <label  for="telephone">Votre numéro de téléphone</label>
+                <label for="telephone">Votre numéro de téléphone</label>
                 <input type="tel" id="telephone">
             </div>
             <div>
@@ -77,4 +79,5 @@
         </fieldset>
     </form>
 </body>
+
 </html>

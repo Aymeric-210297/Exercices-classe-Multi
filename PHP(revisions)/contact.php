@@ -1,14 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles/index.css">
-    <title>Formulaire de contact</title>
+    <link rel="stylesheet" href="/PHP(revisions)/styles/index.css">
+    <title>PHP(revisions) [Formulaire de contact]</title>
 </head>
+
 <body>
-    <?php include('includes/navbar.php') ?>
+    <?php include $_SERVER['DOCUMENT_ROOT'] . '/PHP(revisions)/includes/menu.php' ?>
     <main>
         <h1>Animalerie Tom&Co</h1>
         <form action="">
@@ -39,4 +41,5 @@
         </form>
     </main>
 </body>
+
 </html>

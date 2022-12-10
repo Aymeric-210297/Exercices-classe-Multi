@@ -1,63 +1,65 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Accueil</title>
-    <link rel="stylesheet" href="CSS/menu.css">
-    <link rel="stylesheet" href="CSS/pied_de_page.css">
-    <link rel="stylesheet" href="CSS/accueil.css">
-    <link rel="stylesheet" href="CSS/global.css">
+    <title>PHP(examen) [Accueil]</title>
+    <link rel="stylesheet" href="/PHP(examen)/CSS/menu.css">
+    <link rel="stylesheet" href="/PHP(examen)/CSS/pied_de_page.css">
+    <link rel="stylesheet" href="/PHP(examen)/CSS/accueil.css">
+    <link rel="stylesheet" href="/PHP(examen)/CSS/global.css">
 </head>
+
 <body>
-    <?php include("includes/menu.php") ?>
+    <?php include $_SERVER['DOCUMENT_ROOT'] . "/PHP(examen)/includes/menu.php" ?>
     <main>
         <div class="galerie_images">
             <h2>Galerie images</h2>
             <div>
-                <div><img src="images/pc.jpg" alt=""></div>
-                <div><img src="images/pc.jpg" alt=""></div>
+                <div><img src="/PHP(examen)/images/pc.jpg" alt=""></div>
+                <div><img src="/PHP(examen)/images/pc.jpg" alt=""></div>
             </div>
             <div>
-                <div><img src="images/pc.jpg" alt=""></div>
-                <div><img src="images/pc.jpg" alt=""></div>
+                <div><img src="/PHP(examen)/images/pc.jpg" alt=""></div>
+                <div><img src="/PHP(examen)/images/pc.jpg" alt=""></div>
             </div>
             <div>
-                <div><img src="images/pc.jpg" alt=""></div>
-                <div><img src="images/pc.jpg" alt=""></div>
+                <div><img src="/PHP(examen)/images/pc.jpg" alt=""></div>
+                <div><img src="/PHP(examen)/images/pc.jpg" alt=""></div>
             </div>
             <div>
-                <div><img src="images/usb.png" alt=""></div>
-                <div><img src="images/usb.png" alt=""></div>
+                <div><img src="/PHP(examen)/images/usb.png" alt=""></div>
+                <div><img src="/PHP(examen)/images/usb.png" alt=""></div>
             </div>
             <div>
-                <div><img src="images/usb.png" alt=""></div>
-                <div><img src="images/usb.png" alt=""></div>
+                <div><img src="/PHP(examen)/images/usb.png" alt=""></div>
+                <div><img src="/PHP(examen)/images/usb.png" alt=""></div>
             </div>
             <div>
-                <div><img src="images/office.jpg" alt=""></div>
-                <div><img src="images/office.jpg" alt=""></div>
+                <div><img src="/PHP(examen)/images/office.jpg" alt=""></div>
+                <div><img src="/PHP(examen)/images/office.jpg" alt=""></div>
             </div>
             <div>
-                <div><img src="images/office.jpg" alt=""></div>
-                <div><img src="images/office.jpg" alt=""></div>
+                <div><img src="/PHP(examen)/images/office.jpg" alt=""></div>
+                <div><img src="/PHP(examen)/images/office.jpg" alt=""></div>
             </div>
             <div>
-                <div><img src="images/office.jpg" alt=""></div>
-                <div><img src="images/office.jpg" alt=""></div>
+                <div><img src="/PHP(examen)/images/office.jpg" alt=""></div>
+                <div><img src="/PHP(examen)/images/office.jpg" alt=""></div>
             </div>
             <div>
-                <div><img src="images/packet.png" alt=""></div>
-                <div><img src="images/packet.png" alt=""></div>
+                <div><img src="/PHP(examen)/images/packet.png" alt=""></div>
+                <div><img src="/PHP(examen)/images/packet.png" alt=""></div>
             </div>
             <div>
-                <div><img src="images/packet.png" alt=""></div>
-                <div><img src="images/packet.png" alt=""></div>
+                <div><img src="/PHP(examen)/images/packet.png" alt=""></div>
+                <div><img src="/PHP(examen)/images/packet.png" alt=""></div>
             </div>
             <div>
-                <div><img src="images/packet.png" alt=""></div>
-                <div><img src="images/packet.png" alt=""></div>
+                <div><img src="/PHP(examen)/images/packet.png" alt=""></div>
+                <div><img src="/PHP(examen)/images/packet.png" alt=""></div>
             </div>
         </div>
         <form action="">
@@ -114,51 +116,52 @@
         <div class="galerie_images">
             <h2>Galerie images</h2>
             <div>
-                <div><img src="images/pc.jpg" alt=""></div>
-                <div><img src="images/pc.jpg" alt=""></div>
+                <div><img src="/PHP(examen)/images/pc.jpg" alt=""></div>
+                <div><img src="/PHP(examen)/images/pc.jpg" alt=""></div>
             </div>
             <div>
-                <div><img src="images/pc.jpg" alt=""></div>
-                <div><img src="images/pc.jpg" alt=""></div>
+                <div><img src="/PHP(examen)/images/pc.jpg" alt=""></div>
+                <div><img src="/PHP(examen)/images/pc.jpg" alt=""></div>
             </div>
             <div>
-                <div><img src="images/pc.jpg" alt=""></div>
-                <div><img src="images/pc.jpg" alt=""></div>
+                <div><img src="/PHP(examen)/images/pc.jpg" alt=""></div>
+                <div><img src="/PHP(examen)/images/pc.jpg" alt=""></div>
             </div>
             <div>
-                <div><img src="images/usb.png" alt=""></div>
-                <div><img src="images/usb.png" alt=""></div>
+                <div><img src="/PHP(examen)/images/usb.png" alt=""></div>
+                <div><img src="/PHP(examen)/images/usb.png" alt=""></div>
             </div>
             <div>
-                <div><img src="images/usb.png" alt=""></div>
-                <div><img src="images/usb.png" alt=""></div>
+                <div><img src="/PHP(examen)/images/usb.png" alt=""></div>
+                <div><img src="/PHP(examen)/images/usb.png" alt=""></div>
             </div>
             <div>
-                <div><img src="images/office.jpg" alt=""></div>
-                <div><img src="images/office.jpg" alt=""></div>
+                <div><img src="/PHP(examen)/images/office.jpg" alt=""></div>
+                <div><img src="/PHP(examen)/images/office.jpg" alt=""></div>
             </div>
             <div>
-                <div><img src="images/office.jpg" alt=""></div>
-                <div><img src="images/office.jpg" alt=""></div>
+                <div><img src="/PHP(examen)/images/office.jpg" alt=""></div>
+                <div><img src="/PHP(examen)/images/office.jpg" alt=""></div>
             </div>
             <div>
-                <div><img src="images/office.jpg" alt=""></div>
-                <div><img src="images/office.jpg" alt=""></div>
+                <div><img src="/PHP(examen)/images/office.jpg" alt=""></div>
+                <div><img src="/PHP(examen)/images/office.jpg" alt=""></div>
             </div>
             <div>
-                <div><img src="images/packet.png" alt=""></div>
-                <div><img src="images/packet.png" alt=""></div>
+                <div><img src="/PHP(examen)/images/packet.png" alt=""></div>
+                <div><img src="/PHP(examen)/images/packet.png" alt=""></div>
             </div>
             <div>
-                <div><img src="images/packet.png" alt=""></div>
-                <div><img src="images/packet.png" alt=""></div>
+                <div><img src="/PHP(examen)/images/packet.png" alt=""></div>
+                <div><img src="/PHP(examen)/images/packet.png" alt=""></div>
             </div>
             <div>
-                <div><img src="images/packet.png" alt=""></div>
-                <div><img src="images/packet.png" alt=""></div>
+                <div><img src="/PHP(examen)/images/packet.png" alt=""></div>
+                <div><img src="/PHP(examen)/images/packet.png" alt=""></div>
             </div>
         </div>
     </main>
-    <?php include("includes/pied_de_page.php") ?>
+    <?php include $_SERVER['DOCUMENT_ROOT'] . "/PHP(examen)/includes/pied_de_page.php" ?>
 </body>
+
 </html>

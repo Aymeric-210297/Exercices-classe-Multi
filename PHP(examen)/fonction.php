@@ -1,7 +1,10 @@
 <?php
 
-function TriangleRectangle($C1, $C2, $C3, &$Message) {
-    $Pg; $Cote2; $Cote3;
+function TriangleRectangle($C1, $C2, $C3, &$Message)
+{
+    $Pg;
+    $Cote2;
+    $Cote3;
 
     if (($C1 >= $C2) && ($C1 >= $C3)) {
         $Pg = $C1;
@@ -20,7 +23,7 @@ function TriangleRectangle($C1, $C2, $C3, &$Message) {
     }
 
     if ($Pg < $Cote2 + $Cote3) {
-        if ($Pg*$Pg == $Cote2*$Cote2 + $Cote3*$Cote3) {
+        if ($Pg * $Pg == $Cote2 * $Cote2 + $Cote3 * $Cote3) {
             if ($Cote2 == $Cote3) {
                 $Message = "Triangle rectangle isocèle";
             } else {
@@ -34,7 +37,8 @@ function TriangleRectangle($C1, $C2, $C3, &$Message) {
     }
 }
 
-function ChercheDiviseurs($nb, &$diviseurs) {
+function ChercheDiviseurs($nb, &$diviseurs)
+{
     $i = 1;
     $diviseurs = "";
     // Pour avoir la même chose que l'affichage il faut retirer le "=" de la boucle while.
@@ -61,18 +65,20 @@ $voyelles = ["a", "e", "i", "o", "u", "y", "A", "E", "I", "O", "U", "Y"];
 
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fonction</title>
-    <link rel="stylesheet" href="CSS/menu.css">
-    <link rel="stylesheet" href="CSS/pied_de_page.css">
-    <link rel="stylesheet" href="CSS/fonction.css">
-    <link rel="stylesheet" href="CSS/global.css">
+    <title>PHP(examen) [Fonction]</title>
+    <link rel="stylesheet" href="/PHP(examen)/CSS/menu.css">
+    <link rel="stylesheet" href="/PHP(examen)/CSS/pied_de_page.css">
+    <link rel="stylesheet" href="/PHP(examen)/CSS/fonction.css">
+    <link rel="stylesheet" href="/PHP(examen)/CSS/global.css">
 </head>
+
 <body>
-    <?php include("includes/menu.php") ?>
+    <?php include $_SERVER['DOCUMENT_ROOT'] . "/PHP(examen)/includes/menu.php" ?>
     <main>
         <div>
             <div class="titre">
@@ -97,11 +103,11 @@ $voyelles = ["a", "e", "i", "o", "u", "y", "A", "E", "I", "O", "U", "Y"];
                 <div>
                     <h3>Changer un nombre par un autre</h3>
                     <ul>
-                        <?php for ($i=0; $i < strlen($chiffres); $i++): ?>
+                        <?php for ($i = 0; $i < strlen($chiffres); $i++) : ?>
                             <?php $valeur = intval($chiffres[$i]) ?>
-                            <?php if($valeur < 5): ?>
+                            <?php if ($valeur < 5) : ?>
                                 <li><?= $valeur + 2 ?></li>
-                            <?php else: ?>
+                            <?php else : ?>
                                 <li><?= $valeur + 3 ?></li>
                             <?php endif ?>
                         <?php endfor ?>
@@ -110,10 +116,10 @@ $voyelles = ["a", "e", "i", "o", "u", "y", "A", "E", "I", "O", "U", "Y"];
                 <div>
                     <h3>Remplacer les voyelles et consonnes</h3>
                     <ul>
-                        <?php for ($i=0; $i < strlen($voyelle_consonne); $i++): ?>
-                            <?php if(in_array($voyelle_consonne[$i], $voyelles)): ?>
+                        <?php for ($i = 0; $i < strlen($voyelle_consonne); $i++) : ?>
+                            <?php if (in_array($voyelle_consonne[$i], $voyelles)) : ?>
                                 <li>1</li>
-                            <?php else: ?>
+                            <?php else : ?>
                                 <li>0</li>
                             <?php endif ?>
                         <?php endfor ?>
@@ -122,6 +128,7 @@ $voyelles = ["a", "e", "i", "o", "u", "y", "A", "E", "I", "O", "U", "Y"];
             </div>
         </div>
     </main>
-    <?php include("includes/pied_de_page.php") ?>
+    <?php include $_SERVER['DOCUMENT_ROOT'] . "/PHP(examen)/includes/pied_de_page.php" ?>
 </body>
+
 </html>
