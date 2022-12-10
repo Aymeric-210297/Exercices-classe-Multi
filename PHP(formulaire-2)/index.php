@@ -27,7 +27,7 @@
             </div>
         </fieldset>
         <fieldset>
-            <legend>Les nouveaux inuput</legend>
+            <legend>Les nouveaux input</legend>
             <div>
                 <label for="url">Votre URL</label>
                 <input type="text" id="url">
