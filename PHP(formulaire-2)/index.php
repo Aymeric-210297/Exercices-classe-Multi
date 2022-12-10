@@ -38,7 +38,7 @@
             </div>
             <div>
                 <label for="appreciation">Votre appréciation (entre 10 et 20)</label>
-                <input type="range" id="appreciation">
+                <input type="range" id="appreciation" min="10" max="20">
             </div>
             <div>
                 <label for="couleur">Votre couleur préférée</label>
