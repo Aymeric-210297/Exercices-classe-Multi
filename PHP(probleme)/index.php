@@ -1,26 +1,31 @@
 <?php
 $resultat;
-if ($_SERVER['REQUEST_METHOD'] === "GET" && isset($_GET['montant'])) {
-    $resultat = array();
-    $resultat[500] = 0;
-    $resultat[200] = 0;
-    $resultat[100] = 0;
-    $resultat[50] = 0;
-    $resultat[20] = 0;
-    $resultat[10] = 0;
-    $resultat[5] = 0;
-
+if (isset($_GET['montant'])) {
     $montant = $_GET['montant'];
+    if (
+        is_numeric($montant)
+        && $montant >= 1
+        && $montant <= 99999
+    ) {
+        $resultat = array();
+        $resultat[500] = 0;
+        $resultat[200] = 0;
+        $resultat[100] = 0;
+        $resultat[50] = 0;
+        $resultat[20] = 0;
+        $resultat[10] = 0;
+        $resultat[5] = 0;
 
-    $billets = array_keys($resultat);
+        $billets = array_keys($resultat);
 
-    while ($montant >= $billets[sizeof($billets) - 1]) {
-        for ($i = 0; $i < sizeof($billets); $i++) {
-            $valeur = $billets[$i];
-            if ($montant >= $valeur) {
-                $montant = $montant - $valeur;
-                $resultat[$valeur] = $resultat[$valeur] + 1;
-                break;
+        while ($montant >= $billets[sizeof($billets) - 1]) {
+            for ($i = 0; $i < sizeof($billets); $i++) {
+                $valeur = $billets[$i];
+                if ($montant >= $valeur) {
+                    $montant = $montant - $valeur;
+                    $resultat[$valeur] = $resultat[$valeur] + 1;
+                    break;
+                }
             }
         }
     }
@@ -38,10 +43,10 @@ if ($_SERVER['REQUEST_METHOD'] === "GET" && isset($_GET['montant'])) {
 </head>
 
 <body>
-    <form action="/PHP(probleme)" method="GET">
+    <form action="/PHP(probleme)">
         <div>
             <label for="montant">Montant en EUR.</label>
-            <input type="number" name="montant" id="montant" required min="0">
+            <input type="number" name="montant" id="montant" required min="1" max="99999">
         </div>
         <button type="submit">Envoyer</button>
     </form>
