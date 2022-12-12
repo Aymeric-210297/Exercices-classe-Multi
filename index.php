@@ -18,7 +18,7 @@ $files = scandir(__DIR__);
   <h1>Exercices class Multi</h1>
   <ul>
     <?php foreach ($files as $file) : ?>
-      <?php if (is_dir($file) && $file != '.' && $file != '..' && $file != '.git') : ?>
+      <?php if (is_dir($file) && $file != '.' && $file != '..' && $file != '.git' && $file != '.github') : ?>
         <li>
           <a href="<?= $file ?>"><?= $file ?></a>
         </li>
