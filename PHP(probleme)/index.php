@@ -1,6 +1,6 @@
 <?php
 $resultat;
-if ($_SERVER['REQUEST_METHOD'] === "POST" && isset($_POST['montant'])) {
+if ($_SERVER['REQUEST_METHOD'] === "GET" && isset($_GET['montant'])) {
     $resultat = array();
     $resultat[500] = 0;
     $resultat[200] = 0;
@@ -10,7 +10,7 @@ if ($_SERVER['REQUEST_METHOD'] === "POST" && isset($_POST['montant'])) {
     $resultat[10] = 0;
     $resultat[5] = 0;
 
-    $montant = $_POST['montant'];
+    $montant = $_GET['montant'];
 
     $billets = array_keys($resultat);
 
@@ -38,7 +38,7 @@ if ($_SERVER['REQUEST_METHOD'] === "POST" && isset($_POST['montant'])) {
 </head>
 
 <body>
-    <form action="/PHP(probleme)" method="POST">
+    <form action="/PHP(probleme)" method="GET">
         <div>
             <label for="montant">Montant en EUR.</label>
             <input type="number" name="montant" id="montant" required min="0">
