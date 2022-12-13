@@ -2,9 +2,9 @@
 
 function TriangleRectangle($C1, $C2, $C3, &$Message)
 {
-    $Pg;
-    $Cote2;
-    $Cote3;
+    $Pg = null;
+    $Cote2 = null;
+    $Cote3 = null;
 
     if (($C1 >= $C2) && ($C1 >= $C3)) {
         $Pg = $C1;
@@ -71,14 +71,14 @@ $voyelles = ["a", "e", "i", "o", "u", "y", "A", "E", "I", "O", "U", "Y"];
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PHP(examen) [Fonction]</title>
-    <link rel="stylesheet" href="/PHP(examen)/CSS/menu.css">
-    <link rel="stylesheet" href="/PHP(examen)/CSS/pied_de_page.css">
-    <link rel="stylesheet" href="/PHP(examen)/CSS/fonction.css">
-    <link rel="stylesheet" href="/PHP(examen)/CSS/global.css">
+    <link rel="stylesheet" href="CSS/menu.css">
+    <link rel="stylesheet" href="CSS/pied_de_page.css">
+    <link rel="stylesheet" href="CSS/fonction.css">
+    <link rel="stylesheet" href="CSS/global.css">
 </head>
 
 <body>
-    <?php include $_SERVER['DOCUMENT_ROOT'] . "/PHP(examen)/includes/menu.php" ?>
+    <?php include __DIR__ . "/includes/menu.php" ?>
     <main>
         <div>
             <div class="titre">
@@ -128,7 +128,7 @@ $voyelles = ["a", "e", "i", "o", "u", "y", "A", "E", "I", "O", "U", "Y"];
             </div>
         </div>
     </main>
-    <?php include $_SERVER['DOCUMENT_ROOT'] . "/PHP(examen)/includes/pied_de_page.php" ?>
+    <?php include __DIR__ . "/includes/pied_de_page.php" ?>
 </body>
 
 </html>

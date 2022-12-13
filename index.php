@@ -20,7 +20,7 @@ $files = scandir(__DIR__);
     <?php foreach ($files as $file) : ?>
       <?php if (is_dir($file) && $file != '.' && $file != '..' && $file != '.git' && $file != '.github') : ?>
         <li>
-          <a href="<?= $file ?>"><?= $file ?></a>
+          <a href="<?= $file ?>/"><?= $file ?></a>
         </li>
       <?php endif ?>
     <?php endforeach ?>

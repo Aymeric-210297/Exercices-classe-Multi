@@ -43,7 +43,7 @@ if (isset($_GET['montant'])) {
 </head>
 
 <body>
-    <form action="/PHP(probleme)">
+    <form action=".">
         <div>
             <label for="montant">Montant en EUR.</label>
             <input type="number" name="montant" id="montant" required min="1" max="99999">
